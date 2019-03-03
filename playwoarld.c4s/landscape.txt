@@ -9,13 +9,11 @@ map normalMitKristallUndSchwefel {
 
 // Erstellt den Erdboden
   overlay { algo=solid; mat=Earth; turbulence=100; a=10 ; x=-50; y=20; zoomX=-50; zoomY=-50; wdt=200 ; sub=1; tex=Rough; loosebounds=1;
-	mat { mat=Earth; tex=SWIRL; };
-    mat { mat=Earth; tex=Smooth; };
-    mat { mat=Earth; tex=Smooth2; };
+	mat { mat=Earth; tex=SWIRL; mat { mat=Earth; tex=Smooth; mat { mat=Earth; tex=Smooth2; }; }; };
 	};
 
 // Erstellt das Erdreich
-  overlay { algo=solid; mat=Earth; turbulence=1000; a=10; x=-50; y=40; zoomX=-50; zoomY=-50; wdt=200; sub=1; tex=Rough; loosebounds=1;
+  overlay { algo=solid; mat=Earth; turbulence=1000; a=10; x=-50; y=30; zoomX=-50; zoomY=-50; wdt=200; sub=1; tex=Rough; loosebounds=1;
 	mat { mat=Acid; tex=SMOOTH; mat { mat=Acid; tex=Liquid; }; };
 	mat { mat=Ashes; tex=Spots; mat { mat=Ashes; tex=Ridge; }; };
 	mat { mat=Coal; tex=SWIRL; };
@@ -34,16 +32,37 @@ map normalMitKristallUndSchwefel {
     mat { mat=Sulphur; tex=Swirl; a=1; };
     mat { mat=Tunnel; tex=SMOOTH2; mat { mat=Tunnel; tex=SMOOTH; }; mat { mat=Tunnel; tex=Rough; }; };
     mat { mat=Water; tex=SMOOTH; mat { mat=Water; tex=Liquid; }; };
-	};
 	
+	mat { mat=Earth; tex=SWIRL; };
+    mat { mat=Earth; tex=Smooth; };
+    mat { mat=Earth; tex=Smooth2; };
+    mat { mat=Water; tex=SMOOTH; mat { mat=Water; tex=Liquid; }; };
+
+	
+	};
+
+/*	
 // Mehr Erde im Boden	
-/*
   overlay { algo=solid; mat=Earth; turbulence=1000; a=10; x=-50; y=60; zoomX=-50; zoomY=-50; wdt=200; sub=1; tex=Rough; loosebounds=1;
 	mat { mat=Earth; tex=SWIRL; };
     mat { mat=Earth; tex=Smooth; };
     mat { mat=Earth; tex=Smooth2; };
   };
+*/  
+/*
+// Mehr Tunnel im Boden	
+  overlay { algo=solid; mat=Earth; turbulence=1000; a=10; x=-50; y=20; zoomX=50; zoomY=-50; wdt=200; sub=1; tex=Rough; loosebounds=1;
+	mat { mat=Tunnel; tex=SMOOTH2; mat { mat=Tunnel; tex=SMOOTH; }; mat { mat=Tunnel; tex=Rough; }; };
+  };
 */
+/*
+// Grundwasser	
+  overlay { algo=solid; mat=Earth; turbulence=1000; a=10; x=-50; y=90; sub=1; tex=Rough; loosebounds=1;
+	mat { mat=Tunnel; tex=SMOOTH2; mat { mat=Tunnel; tex=SMOOTH; }; mat { mat=Tunnel; tex=Rough; }; };
+	mat { mat=Water; tex=SMOOTH; mat { mat=Water; tex=Liquid; }; };
+  };
+*/
+
 // Gemischter Granitstein	
 //    mat { mat=Granite; tex=Rock; a=10; mat { mat=Rock; tex=Ridge; }; mat { mat=Rock; a=9; tex=Rough; }; overlay { mat=Gold; tex=Rough; algo=random; a=3; }; };
 
