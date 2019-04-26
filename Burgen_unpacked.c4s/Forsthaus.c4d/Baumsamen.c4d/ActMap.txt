@@ -1,0 +1,8 @@
+[Action]
+Name=Decay
+Procedure=NONE
+Length=1
+Delay=100
+FacetBase=1
+NextAction=Decay
+EndCall=Decaying

@@ -1,0 +1,2 @@
+Works like the "normal" elevator.
+Finally you can move things, that didn't match in the old elevator (Horses, Waggons, etc.).

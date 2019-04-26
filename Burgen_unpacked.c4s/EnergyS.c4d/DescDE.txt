@@ -1,0 +1,3 @@
+Sammelt Energie und gibt sie wieder bei Bedarf ab. Warnung: Sollte nicht mit Wasser in Berührung kommen! Kann maximal 500000 Energieeinheiten aufnehmen.
+
+Es kann Energie gekauft werden

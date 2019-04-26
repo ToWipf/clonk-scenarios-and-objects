@@ -1,0 +1,1 @@
+Collects energy and delivers it if needed. Attention: Shouldn't have any contact with water.
