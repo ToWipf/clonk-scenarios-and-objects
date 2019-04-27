@@ -1,2 +1,0 @@
-CtxHomeDesc=Zurück ins Trockene
-CtrlInventoryDesc=Inventar auswählen

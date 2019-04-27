@@ -1,2 +1,0 @@
-DE:Energiesammler
-US:Energy Collector

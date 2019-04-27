@@ -1,2 +1,0 @@
-CtxHomeDesc=Back to shelter
-CtrlInventoryDesc=Shift inventory

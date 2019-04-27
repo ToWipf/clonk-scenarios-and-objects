@@ -1,1 +1,0 @@
-Gibt den Radius, in dem neue Bäume gepflanzt werden, an.
