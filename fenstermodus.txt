@@ -1,5 +1,5 @@
 löschen:
 reg delete "HKCU\Software\RedWolf Design\Clonk Rage" /f
 
-Fenstermodus zu aktivieren:
+Fenstermodus aktivieren:
 reg add "HKCU\Software\RedWolf Design\Clonk Rage\Graphics" /v NewGfxCfg /t REG_DWORD /d 1024 /f
